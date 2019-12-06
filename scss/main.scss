@@ -1,0 +1,179 @@
+@import "./mixin.scss";
+header {
+  width: 100%;
+  background-color: #fbfbfb;
+  p {
+    @include text(#555555, "Roboto", normal, 16px, 19px);
+  }
+
+  .header-block {
+    padding-top: 10px;
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .icons,
+  .catalog {
+    display: flex;
+    align-items: center;
+    img {
+      object-fit: contain;
+    }
+    p {
+      margin: 0px;
+    }
+  }
+
+  .catalog {
+    width: 100px;
+    justify-content: space-between;
+  }
+
+  .icons {
+    margin-left: 250px;
+    width: 250px;
+    justify-content: space-between;
+  }
+
+  #logo {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    p {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .purchase {
+    margin-top: 5px;
+    padding-top: 200px;
+    background-image: url(../img/banner_wh.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 680px;
+    h1 {
+      @include text(#555555, "Paytone One", normal, 50px, 70px);
+      margin: 0px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      width: 175px;
+      @include text(#aaaaaa, "Roboto", normal, 24px, 28px);
+      margin: 0px;
+      margin-bottom: 80px;
+    }
+
+    a {
+      margin-top: 150px;
+      padding: 11px 52px;
+      padding-right: 22px;
+      text-decoration: none;
+      @include text(#c65ea0, "Roboto", normal, 14px, 16px);
+      border: 1px solid #c65ea0;
+      box-sizing: border-box;
+      border-radius: 19px;
+
+      img {
+        margin-left: 30px;
+      }
+    }
+
+    .refrigerator {
+      margin-left: 180px;
+    }
+
+    .circles {
+      height: 170px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        object-fit: contain;
+      }
+      position: absolute;
+      left: 72%;
+      bottom: 29%;
+    }
+
+    .goods {
+      width: 1150px;
+      display: flex;
+      margin-top: 300px;
+      margin-left: 100px;
+
+      img {
+        object-fit: contain;
+      }
+
+      .good {
+        background-color: #ffffff;
+        width: 250px;
+        height: 90px;
+        border-radius: 10px;
+        display: flex;
+        position: relative;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+
+        .img {
+          width: 90px;
+          margin-right: 10px;
+        }
+
+        .pink {
+          background-image: url(../img/Rectangle33.svg);
+          background-repeat: no-repeat;
+        }
+
+        .violet {
+          background-image: url(../img/Rectangle36.svg);
+          background-repeat: no-repeat;
+        }
+
+        .dark-blue {
+          background-image: url(../img/Rectangle39.svg);
+          background-repeat: no-repeat;
+        }
+
+        .light-blue {
+          background-image: url(../img/Rectangle42.svg);
+          background-repeat: no-repeat;
+        }
+
+        .blue {
+          background-image: url(../img/Rectangle45.svg);
+          background-repeat: no-repeat;
+        }
+
+        .info {
+          width: 100px;
+          p {
+            width: 120px;
+            margin: 0px;
+            @include text(#555555, "Roboto", normal, 14px, 16px);
+          }
+
+          img {
+            position: absolute;
+            right: -8px;
+            bottom: -13px;
+          }
+
+          .k {
+            right: 18px;
+            bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
