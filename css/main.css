@@ -22,6 +22,7 @@ header .header-block {
 
 header .icons,
 header .catalog {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +60,7 @@ header .icons {
 header #logo {
   margin-left: 80px;
   margin-right: 80px;
+  cursor: pointer;
 }
 
 header .about {
@@ -68,6 +70,7 @@ header .about {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 header .about p:not(:last-child) {
@@ -80,7 +83,7 @@ header .purchase {
   background-image: url(../img/banner_wh.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 680px;
+  height: 480px;
 }
 
 header .purchase h1 {
@@ -155,8 +158,8 @@ header .purchase .goods {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 300px;
-  margin-left: 100px;
+  margin-top: 80px;
+  margin-left: 150px;
 }
 
 header .purchase .goods img {
@@ -182,6 +185,7 @@ header .purchase .goods .good:not(:last-child) {
 header .purchase .goods .good .img {
   width: 90px;
   margin-right: 10px;
+  position: relative;
 }
 
 header .purchase .goods .good .pink {
@@ -189,9 +193,21 @@ header .purchase .goods .good .pink {
   background-repeat: no-repeat;
 }
 
+header .purchase .goods .good .pink img {
+  position: absolute;
+  left: 8%;
+  top: 20px;
+}
+
 header .purchase .goods .good .violet {
   background-image: url(../img/Rectangle36.svg);
   background-repeat: no-repeat;
+}
+
+header .purchase .goods .good .violet img {
+  position: absolute;
+  left: 20px;
+  top: 10px;
 }
 
 header .purchase .goods .good .dark-blue {
@@ -199,14 +215,32 @@ header .purchase .goods .good .dark-blue {
   background-repeat: no-repeat;
 }
 
+header .purchase .goods .good .dark-blue img {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
 header .purchase .goods .good .light-blue {
   background-image: url(../img/Rectangle42.svg);
   background-repeat: no-repeat;
 }
 
+header .purchase .goods .good .light-blue img {
+  position: absolute;
+  left: 25px;
+  top: 10px;
+}
+
 header .purchase .goods .good .blue {
   background-image: url(../img/Rectangle45.svg);
   background-repeat: no-repeat;
+}
+
+header .purchase .goods .good .blue img {
+  position: absolute;
+  left: 25px;
+  top: 15px;
 }
 
 header .purchase .goods .good .info {
@@ -221,9 +255,11 @@ header .purchase .goods .good .info p {
   font-family: "Roboto";
   color: #555555;
   line-height: 16px;
+  margin-top: 11px;
 }
 
 header .purchase .goods .good .info img {
+  cursor: pointer;
   position: absolute;
   right: -8px;
   bottom: -13px;
@@ -232,4 +268,243 @@ header .purchase .goods .good .info img {
 header .purchase .goods .good .info .k {
   right: 18px;
   bottom: 10px;
+}
+
+main {
+  height: 1900px;
+  background: #c9c9c9;
+  padding-top: 100px;
+}
+
+main p {
+  margin: 0px;
+}
+
+main .stock {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 1220px;
+  height: 450px;
+  background: white;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  margin: 0 auto;
+}
+
+main .stock .stock-header {
+  padding-top: 25px;
+  margin: 0 auto;
+  width: 1150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+main .stock .stock-header p {
+  font-weight: normal;
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #555555;
+  line-height: 28px;
+}
+
+main .stock .stock-header .pages {
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: #555555;
+  line-height: 16px;
+}
+
+main .stock .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+main .stock .slider .slide {
+  margin-left: 20px;
+  width: 240px;
+  height: 354px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-items: center;
+}
+
+main .stock .slider .slide > img {
+  width: 200px;
+  height: 150px;
+  margin-left: 45px;
+}
+
+main .stock .slider .slide .title {
+  text-align: center;
+  font-weight: 14px;
+  font-size: normal;
+  font-family: "Roboto";
+  color: #555555;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+main .stock .slider .slide p {
+  text-align: center;
+  font-weight: 14px;
+  font-size: normal;
+  font-family: "Roboto";
+  color: #aaaaaa;
+  line-height: 16px;
+}
+
+main .stock .slider .slide .reviews {
+  margin-top: 10px;
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 180px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+main .stock .slider .slide .reviews p {
+  font-weight: 12px;
+  font-size: normal;
+  font-family: "Roboto";
+  color: #aaaaaa;
+  line-height: 16px;
+  margin-top: 1px;
+}
+
+main .stock .slider .slide .reviews i {
+  font-size: 11px;
+  color: #3ab1c8;
+  margin-right: 0px;
+}
+
+main .stock .slider .slide .price {
+  padding-left: 60px;
+}
+
+main .stock .slider .slide .price .last {
+  -webkit-text-decoration-line: line-through;
+  text-decoration-line: line-through;
+  font-weight: 14px;
+  font-size: normal;
+  font-family: "Roboto";
+  color: #c65ea0;
+  line-height: 16px;
+}
+
+main .stock .slider .slide .price .new {
+  font-weight: normal;
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #555555;
+  line-height: 28px;
+}
+
+main .stock .slider .slide .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+main .stock .slider .slide .action .buy {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/Ellipse8.svg);
+  background-repeat: no-repeat;
+}
+
+main .stock .slider .slide .action .buy img {
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+main .slick-active {
+  outline: none;
+}
+
+main .prev {
+  position: absolute;
+  bottom: 48%;
+  left: -3%;
+  cursor: pointer;
+}
+
+main .prev::before {
+  content: url(../img/prev.svg);
+}
+
+main .next {
+  position: absolute;
+  bottom: 48%;
+  right: -3%;
+  cursor: pointer;
+}
+
+main .next::before {
+  content: url(../img/next.svg);
+}
+
+main #q {
+  margin-top: 100px;
+}
+
+main .brand {
+  width: 1320px;
+  height: 202px;
+  background: white;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+main .brand .brands-slider {
+  margin: auto;
+}
+
+main .brand .brands-slider div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .brand .brands-slider div > div:not(:first-child) {
+  margin-top: 60px;
+}
+
+main .brand .brands-slider div > div img {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+main .brand .brands-slider div > div img:not(:last-child) {
+  margin-right: 80px;
 }

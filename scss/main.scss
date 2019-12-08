@@ -15,6 +15,7 @@ header {
 
   .icons,
   .catalog {
+    cursor: pointer;
     display: flex;
     align-items: center;
     img {
@@ -39,11 +40,13 @@ header {
   #logo {
     margin-left: 80px;
     margin-right: 80px;
+    cursor: pointer;
   }
 
   .about {
     display: flex;
     align-items: center;
+    cursor: pointer;
     p {
       &:not(:last-child) {
         margin-right: 40px;
@@ -57,7 +60,7 @@ header {
     background-image: url(../img/banner_wh.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 680px;
+    height: 480px;
     h1 {
       @include text(#555555, "Paytone One", normal, 50px, 70px);
       margin: 0px;
@@ -106,8 +109,8 @@ header {
     .goods {
       width: 1150px;
       display: flex;
-      margin-top: 300px;
-      margin-left: 100px;
+      margin-top: 80px;
+      margin-left: 150px;
 
       img {
         object-fit: contain;
@@ -127,31 +130,57 @@ header {
         .img {
           width: 90px;
           margin-right: 10px;
+          position: relative;
         }
 
         .pink {
           background-image: url(../img/Rectangle33.svg);
           background-repeat: no-repeat;
+          img {
+            position: absolute;
+            left: 8%;
+            top: 20px;
+          }
         }
 
         .violet {
           background-image: url(../img/Rectangle36.svg);
           background-repeat: no-repeat;
+          img {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+          }
         }
 
         .dark-blue {
           background-image: url(../img/Rectangle39.svg);
           background-repeat: no-repeat;
+          img {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+          }
         }
 
         .light-blue {
           background-image: url(../img/Rectangle42.svg);
           background-repeat: no-repeat;
+          img {
+            position: absolute;
+            left: 25px;
+            top: 10px;
+          }
         }
 
         .blue {
           background-image: url(../img/Rectangle45.svg);
           background-repeat: no-repeat;
+          img {
+            position: absolute;
+            left: 25px;
+            top: 15px;
+          }
         }
 
         .info {
@@ -160,9 +189,11 @@ header {
             width: 120px;
             margin: 0px;
             @include text(#555555, "Roboto", normal, 14px, 16px);
+            margin-top: 11px;
           }
 
           img {
+            cursor: pointer;
             position: absolute;
             right: -8px;
             bottom: -13px;
@@ -171,6 +202,177 @@ header {
           .k {
             right: 18px;
             bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  height: 1900px;
+  background: #c9c9c9;
+  padding-top: 100px;
+
+  p {
+    margin: 0px;
+  }
+  .stock {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1220px;
+    height: 450px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    margin: 0 auto;
+
+    .stock-header {
+      padding-top: 25px;
+      margin: 0 auto;
+      width: 1150px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        @include text(#555555, "Roboto", 24px, normal, 28px);
+      }
+
+      .pages {
+        @include text(#555555, "Roboto", 14px, normal, 16px);
+      }
+    }
+
+    .slider {
+      display: flex;
+      margin-top: 40px;
+
+      .slide {
+        margin-left: 20px;
+        width: 240px;
+        height: 354px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        > img {
+          width: 200px;
+          height: 150px;
+          margin-left: 45px;
+        }
+        .title {
+          text-align: center;
+          @include text(#555555, "Roboto", normal, 14px, 16px);
+          margin-bottom: 5px;
+        }
+
+        p {
+          text-align: center;
+          @include text(#aaaaaa, "Roboto", normal, 14px, 16px);
+        }
+
+        .reviews {
+          margin-top: 10px;
+          margin-left: 40px;
+          display: flex;
+          width: 180px;
+          justify-content: space-between;
+          // align-items: center;
+
+          p {
+            @include text(#aaaaaa, "Roboto", normal, 12px, 16px);
+            margin-top: 1px;
+          }
+
+          i {
+            font-size: 11px;
+            color: #3ab1c8;
+            margin-right: 0px;
+          }
+        }
+
+        .price {
+          padding-left: 60px;
+          .last {
+            text-decoration-line: line-through;
+            @include text(#c65ea0, "Roboto", normal, 14px, 16px);
+          }
+
+          .new {
+            @include text(#555555, "Roboto", 24px, normal, 28px);
+          }
+        }
+
+        .action {
+          display: flex;
+          width: 140px;
+          justify-content: space-between;
+          margin-left: 60px;
+          margin-top: 20px;
+          .buy {
+            width: 40px;
+            height: 40px;
+            background-image: url(../img/Ellipse8.svg);
+            background-repeat: no-repeat;
+            img {
+              margin-left: 6px;
+              margin-top: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slick-active {
+    outline: none;
+  }
+  .prev {
+    position: absolute;
+    bottom: 48%;
+    left: -3%;
+    cursor: pointer;
+    &::before {
+      content: url(../img/prev.svg);
+    }
+  }
+
+  .next {
+    position: absolute;
+    bottom: 48%;
+    right: -3%;
+    cursor: pointer;
+    &::before {
+      content: url(../img/next.svg);
+    }
+  }
+  #q {
+    margin-top: 100px;
+  }
+
+  .brand {
+    width: 1320px;
+    height: 202px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .brands-slider {
+      margin: auto;
+      div {
+        > div {
+          display: flex;
+          &:not(:first-child) {
+            margin-top: 60px;
+          }
+
+          img {
+            object-fit: contain;
+            &:not(:last-child) {
+              margin-right: 80px;
+            }
           }
         }
       }
