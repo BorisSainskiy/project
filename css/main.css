@@ -49,6 +49,110 @@ header .nav-catalog a {
   text-decoration: none;
 }
 
+header #modal {
+  display: none;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header #modal-content {
+  margin: 7% auto;
+  padding: 20px;
+}
+
+header .admin {
+  width: 350px;
+  height: 500px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border-radius: 17px;
+}
+
+header .admin .admin-cross {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+
+header .admin .admin-block {
+  text-align: center;
+}
+
+header .admin .admin-block p {
+  font-weight: normal;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: #555555;
+  line-height: 21px;
+}
+
+header .admin .admin-block form input {
+  width: 250px;
+  height: 38px;
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-radius: 19px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 30px;
+  outline: none;
+}
+
+header .admin .admin-block form input:not(:first-child) {
+  margin-top: 25px;
+}
+
+header .admin .admin-block form button {
+  width: 250px;
+  height: 38px;
+  background: #3ab1c8;
+  border-radius: 19px;
+  border: none;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #fefefe;
+  line-height: 19px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+header .admin .admin-block a {
+  width: 250px;
+  height: 38px;
+  background: #c65ea0;
+  border-radius: 19px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #fefefe;
+  line-height: 19px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 11px 50px;
+}
+
+header .admin .admin-block .admin-social {
+  margin-top: 40px;
+}
+
+header .admin .admin-block .admin-social img {
+  margin-right: 20px;
+}
+
 header .header-block {
   padding-top: 10px;
   width: 1200px;
@@ -358,14 +462,18 @@ main .stock .stock-header .pages {
   line-height: 16px;
 }
 
-main .stock .slider {
+main .stock .first,
+main .stock .second,
+main .stock .third {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
 }
 
-main .stock .slider .slide {
+main .stock .first .slide,
+main .stock .second .slide,
+main .stock .third .slide {
   margin-left: 20px;
   width: 240px;
   height: 354px;
@@ -379,13 +487,17 @@ main .stock .slider .slide {
   justify-items: center;
 }
 
-main .stock .slider .slide > img {
+main .stock .first .slide > img,
+main .stock .second .slide > img,
+main .stock .third .slide > img {
   width: 200px;
   height: 150px;
   margin-left: 45px;
 }
 
-main .stock .slider .slide .title {
+main .stock .first .slide .title,
+main .stock .second .slide .title,
+main .stock .third .slide .title {
   text-align: center;
   font-weight: 14px;
   font-size: normal;
@@ -395,7 +507,9 @@ main .stock .slider .slide .title {
   margin-bottom: 5px;
 }
 
-main .stock .slider .slide p {
+main .stock .first .slide p,
+main .stock .second .slide p,
+main .stock .third .slide p {
   text-align: center;
   font-weight: 14px;
   font-size: normal;
@@ -404,7 +518,9 @@ main .stock .slider .slide p {
   line-height: 16px;
 }
 
-main .stock .slider .slide .reviews {
+main .stock .first .slide .reviews,
+main .stock .second .slide .reviews,
+main .stock .third .slide .reviews {
   margin-top: 10px;
   margin-left: 40px;
   display: -webkit-box;
@@ -416,7 +532,9 @@ main .stock .slider .slide .reviews {
   justify-content: space-between;
 }
 
-main .stock .slider .slide .reviews p {
+main .stock .first .slide .reviews p,
+main .stock .second .slide .reviews p,
+main .stock .third .slide .reviews p {
   font-weight: 12px;
   font-size: normal;
   font-family: "Roboto";
@@ -425,17 +543,23 @@ main .stock .slider .slide .reviews p {
   margin-top: 1px;
 }
 
-main .stock .slider .slide .reviews i {
+main .stock .first .slide .reviews i,
+main .stock .second .slide .reviews i,
+main .stock .third .slide .reviews i {
   font-size: 11px;
-  color: #3ab1c8;
+  color: gray;
   margin-right: 0px;
 }
 
-main .stock .slider .slide .price {
+main .stock .first .slide .price,
+main .stock .second .slide .price,
+main .stock .third .slide .price {
   padding-left: 60px;
 }
 
-main .stock .slider .slide .price .last {
+main .stock .first .slide .price .last,
+main .stock .second .slide .price .last,
+main .stock .third .slide .price .last {
   -webkit-text-decoration-line: line-through;
   text-decoration-line: line-through;
   font-weight: 14px;
@@ -445,7 +569,9 @@ main .stock .slider .slide .price .last {
   line-height: 16px;
 }
 
-main .stock .slider .slide .price .new {
+main .stock .first .slide .price .new,
+main .stock .second .slide .price .new,
+main .stock .third .slide .price .new {
   font-weight: normal;
   font-size: 24px;
   font-family: "Roboto";
@@ -453,7 +579,9 @@ main .stock .slider .slide .price .new {
   line-height: 28px;
 }
 
-main .stock .slider .slide .action {
+main .stock .first .slide .action,
+main .stock .second .slide .action,
+main .stock .third .slide .action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,14 +593,18 @@ main .stock .slider .slide .action {
   margin-top: 20px;
 }
 
-main .stock .slider .slide .action .buy {
+main .stock .first .slide .action .buy,
+main .stock .second .slide .action .buy,
+main .stock .third .slide .action .buy {
   width: 40px;
   height: 40px;
   background-image: url(../img/Ellipse8.svg);
   background-repeat: no-repeat;
 }
 
-main .stock .slider .slide .action .buy img {
+main .stock .first .slide .action .buy img,
+main .stock .second .slide .action .buy img,
+main .stock .third .slide .action .buy img {
   margin-left: 6px;
   margin-top: 6px;
 }
@@ -702,4 +834,8 @@ footer .footer-contact .contact-sicial {
 
 footer .footer-contact .contact-sicial img:not(:last-child) {
   margin-right: 15px;
+}
+
+#activeStars {
+  color: #3ab1c8;
 }

@@ -34,12 +34,12 @@
                     <img src="./img/heart.svg" alt="heart">
                     <img src="./img/compare.svg" alt="compare">
                     <img src="./img/cart2.svg" alt="purchase">
-                    <img src="./img/user.svg" alt="profile">
+                   <div id="profile"><img src="./img/user.svg" alt="profile"></div> 
                 </div>
             </div>
         </section>
         <section class="nav-catalog">
-            <div class="cross"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="cross"><img src="./img/cross.svg" alt="cross"></div>
             <ul>
                 <a><li>Техника для дома</li></a>
                 <a><li>Крупная техника для кухни</li></a>
@@ -48,6 +48,25 @@
                 <a><li>Техника для красоты</li></a>
             </ul>
         </section>
+        <div id="modal">
+            <section class="admin" id="modal-content">
+                    <div class="admin-cross"><img src="./img/cross.svg" alt="cross"></div>
+                    <div class="admin-block">
+                        <img src="./img/admin.svg" alt="admin">
+                        <p>вход/регистрация</p>
+                        <form action="#">
+                            <input type="email" placeholder="email@examples.com">
+                            <input type="parol" placeholder="**********"> <br>
+                            <button>Войти</button>
+                        </form>
+                        <a href="#">Зарегистрироватся</a>
+                        <div class="admin-social">
+                            <img src="./img/facebook 1.png" alt="facebook">
+                            <img src="./img/google-plus 1.png" alt="google">
+                        </div>
+                    </div>
+            </section>
+        </div>
         <section class="purchase">
             <div class="refrigerator">
                 <h1>BACK to 50’s</h1>
@@ -139,9 +158,9 @@
         <section class="stock">
             <div class="stock-header">
                 <p>Акции</p>
-                <p class="pages">Стр. <span>1</span> из 3</p>
+                <p class="pages">Стр. <span data-arrow="1">1</span> из 3</p>
             </div>
-            <div class="slider">
+            <div class="first">
                 <div class="slide">
                     <img src="./img/Робот-пилесос 1.svg" alt="vacuumCleaner">
                     <p class="title">Робот-пылесос PHILIPS</p>
@@ -331,14 +350,149 @@
                         </div>
                     </div>
                 </div>
+                 <div class="slide">
+                    <img src="./img/Робот-пилесос 1.svg" alt="vacuumCleaner">
+                    <p class="title">Робот-пылесос PHILIPS</p>
+                    <p>SmartPro Compact (FC8774/01)</p>
+                    <div class="reviews">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                        </div>
+                        <img src="./img/message.svg" alt="message">
+                        <p>5 отзывов</p>
+                    </div>
+                    <div class="price">
+                        <p class="last">10 500.</p>
+                        <p class="new">9 450 грн.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                        <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                        <div class="buy">
+                            <img src="./img/buy.svg" alt="basket">
+                        </div>
+                    </div>
+                </div>
+                 <div class="slide">
+                    <img src="./img/Робот-пилесос 1.svg" alt="vacuumCleaner">
+                    <p class="title">Робот-пылесос PHILIPS</p>
+                    <p>SmartPro Compact (FC8774/01)</p>
+                    <div class="reviews">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                        </div>
+                        <img src="./img/message.svg" alt="message">
+                        <p>5 отзывов</p>
+                    </div>
+                    <div class="price">
+                        <p class="last">10 500.</p>
+                        <p class="new">9 450 грн.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                        <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                        <div class="buy">
+                            <img src="./img/buy.svg" alt="basket">
+                        </div>
+                    </div>
+                </div>
+                 <div class="slide">
+                    <img src="./img/Робот-пилесос 1.svg" alt="vacuumCleaner">
+                    <p class="title">Робот-пылесос PHILIPS</p>
+                    <p>SmartPro Compact (FC8774/01)</p>
+                    <div class="reviews">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                        </div>
+                        <img src="./img/message.svg" alt="message">
+                        <p>5 отзывов</p>
+                    </div>
+                    <div class="price">
+                        <p class="last">10 500.</p>
+                        <p class="new">9 450 грн.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                        <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                        <div class="buy">
+                            <img src="./img/buy.svg" alt="basket">
+                        </div>
+                    </div>
+                </div>
+                 <div class="slide">
+                    <img src="./img/Робот-пилесос 1.svg" alt="vacuumCleaner">
+                    <p class="title">Робот-пылесос PHILIPS</p>
+                    <p>SmartPro Compact (FC8774/01)</p>
+                    <div class="reviews">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                        </div>
+                        <img src="./img/message.svg" alt="message">
+                        <p>5 отзывов</p>
+                    </div>
+                    <div class="price">
+                        <p class="last">10 500.</p>
+                        <p class="new">9 450 грн.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                        <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                        <div class="buy">
+                            <img src="./img/buy.svg" alt="basket">
+                        </div>
+                    </div>
+                </div>
+                 <div class="slide">
+                    <img src="./img/Робот-пилесос 1.svg" alt="vacuumCleaner">
+                    <p class="title">Робот-пылесос PHILIPS</p>
+                    <p>SmartPro Compact (FC8774/01)</p>
+                    <div class="reviews">
+                        <div class="stars">
+                            <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                            <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                        </div>
+                        <img src="./img/message.svg" alt="message">
+                        <p>5 отзывов</p>
+                    </div>
+                    <div class="price">
+                        <p class="last">10 500.</p>
+                        <p class="new">9 450 грн.</p>
+                    </div>
+                    <div class="action">
+                        <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                        <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                        <div class="buy">
+                            <img src="./img/buy.svg" alt="basket">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="stock" id="q">
                 <div class="stock-header">
                     <p>Популярные</p>
-                    <p class="pages">Стр. <span>1</span> из 3</p>
+                    <p class="pages">Стр. <span data-arrow="2">1</span> из 3</p>
                 </div>
-                <div class="slider">
+                <div class="second">
                     <div class="slide">
                         <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
                         <p class="title">Робот-пылесос PHILIPS</p>
@@ -528,6 +682,141 @@
                             </div>
                         </div>
                     </div>
+                    <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="brand" id="q">
@@ -556,11 +845,38 @@
             <section class="stock" id="q">
                 <div class="stock-header">
                     <p>Популярные</p>
-                    <p class="pages">Стр. <span>1</span> из 3</p>
+                    <p class="pages">Стр. <span data-arrow="3">1</span> из 3</p>
                 </div>
-                <div class="slider">
+                <div class="third">
                     <div class="slide">
                         <img src="./img/braun_oral-b_pro-expert_a 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
                         <p class="title">Робот-пылесос PHILIPS</p>
                         <p>SmartPro Compact (FC8774/01)</p>
                         <div class="reviews">
@@ -641,7 +957,61 @@
                         </div>
                     </div>
                     <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
                         <img src="./img/стыралка-самсунг 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
                         <p class="title">Робот-пылесос PHILIPS</p>
                         <p>SmartPro Compact (FC8774/01)</p>
                         <div class="reviews">
@@ -695,7 +1065,61 @@
                         </div>
                     </div>
                     <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
                         <img src="./img/Робот-пилесос 1.svg" alt="vacuumCleaner">
+                        <p class="title">Робот-пылесос PHILIPS</p>
+                        <p>SmartPro Compact (FC8774/01)</p>
+                        <div class="reviews">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true" data-rate="1"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="2"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="3"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="4"></i>
+                                <i class="fa fa-star" aria-hidden="true" data-rate="5"></i>
+                            </div>
+                            <img src="./img/message.svg" alt="message">
+                            <p>5 отзывов</p>
+                        </div>
+                        <div class="price">
+                            <p class="last">10 500.</p>
+                            <p class="new">9 450 грн.</p>
+                        </div>
+                        <div class="action">
+                            <img src="./img/whiteHeart.svg" alt="whiteHeart">
+                            <img src="./img/whiteCompare.svg" alt="whiteCompare">
+                            <div class="buy">
+                                <img src="./img/buy.svg" alt="basket">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./img/увлажнытель 1.svg" alt="vacuumCleaner">
                         <p class="title">Робот-пылесос PHILIPS</p>
                         <p>SmartPro Compact (FC8774/01)</p>
                         <div class="reviews">
@@ -803,5 +1227,8 @@
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/profile.js"></script>
+    <script src="./js/pages.js"></script>
+    <script src="./js/star.js"></script>
 </body>
 </html>
