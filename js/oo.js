@@ -1,7 +1,7 @@
 $(() => {
   $(".catalog").on("click", () => {
+    alert("!!");
     $(".nav-catalog").attr("id", "burger");
-    console.log($(".nav-catalog"));
   });
 
   $(".cross").on("click", () => {

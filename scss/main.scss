@@ -4,10 +4,10 @@ header {
   background-color: #fbfbfb;
 
   .container {
-    width: 1600px;
+    width: 1500px;
     position: relative;
     margin: 0 auto;
-    max-width: 95%;
+    // max-width: 98%;
   }
   p {
     @include text(#555555, "Roboto", normal, 16px, 19px);
@@ -35,6 +35,7 @@ header {
     position: absolute;
     left: 150px;
     top: 120px;
+    z-index: 1;
 
     li {
       list-style: none;
