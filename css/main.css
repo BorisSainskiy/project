@@ -3,6 +3,13 @@ header {
   background-color: #fbfbfb;
 }
 
+header .container {
+  width: 1600px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
 header p {
   font-weight: 16px;
   font-size: normal;
@@ -249,7 +256,7 @@ header .purchase p {
   margin-bottom: 80px;
 }
 
-header .purchase a {
+header .purchase > a {
   margin-top: 150px;
   padding: 11px 52px;
   padding-right: 22px;
@@ -265,7 +272,7 @@ header .purchase a {
   border-radius: 19px;
 }
 
-header .purchase a img {
+header .purchase > a img {
   margin-left: 30px;
 }
 
@@ -287,7 +294,7 @@ header .purchase .circles {
   justify-content: space-between;
   position: absolute;
   left: 72%;
-  bottom: 29%;
+  bottom: 38%;
 }
 
 header .purchase .circles img {
