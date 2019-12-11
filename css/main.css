@@ -547,7 +547,7 @@ main .stock .first .slide .reviews i,
 main .stock .second .slide .reviews i,
 main .stock .third .slide .reviews i {
   font-size: 11px;
-  color: gray;
+  color: #3ab1c8;
   margin-right: 0px;
 }
 
@@ -764,6 +764,12 @@ footer .footer-nav > div ul:first-child {
   margin-right: 75px;
 }
 
+footer .footer-nav > div ul a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
 footer .footer-nav > div .ul-header {
   font-weight: normal;
   font-size: 16px;
@@ -779,6 +785,7 @@ footer .footer-nav > div li {
   color: #fefefe;
   line-height: 13px;
   list-style: none;
+  cursor: pointer;
 }
 
 footer .footer-nav > div li:not(:last-child) {
@@ -830,6 +837,7 @@ footer .footer-contact .contact-sicial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 footer .footer-contact .contact-sicial img:not(:last-child) {

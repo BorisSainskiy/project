@@ -409,7 +409,7 @@ main {
 
           i {
             font-size: 11px;
-            color: gray;
+            color: #3ab1c8;
             margin-right: 0px;
           }
         }
@@ -560,6 +560,11 @@ footer {
         &:first-child {
           margin-right: 75px;
         }
+        a {
+          display: block;
+          text-decoration: none;
+          margin-bottom: 15px;
+        }
       }
       .ul-header {
         @include text(#555555, "Roboto", 16px, normal, 19px);
@@ -568,6 +573,7 @@ footer {
       li {
         @include text(#fefefe, "Roboto", 14px, normal, 13px);
         list-style: none;
+        cursor: pointer;
 
         &:not(:last-child) {
           margin-bottom: 15px;
@@ -603,6 +609,7 @@ footer {
 
     .contact-sicial {
       display: flex;
+      cursor: pointer;
       img {
         &:not(:last-child) {
           margin-right: 15px;
