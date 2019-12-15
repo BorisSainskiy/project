@@ -747,18 +747,36 @@ footer .footer-nav form > p {
   margin-bottom: 15px;
 }
 
-footer .footer-nav form input {
+footer .footer-nav form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 325px;
   height: 38px;
   background: #fefefe;
   border-radius: 19px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .footer-nav form input {
   border: none;
   outline: none;
   border-radius: 19px;
-  margin-bottom: 20px;
   padding-left: 20px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+}
+
+footer .footer-nav form button {
+  border: none;
+  background: #fefefe;
+  border-radius: 19px;
+  padding-left: 10px;
+  width: 46px;
+  cursor: pointer;
+  outline: none;
 }
 
 footer .footer-nav > div {

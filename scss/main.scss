@@ -547,17 +547,31 @@ footer {
       > p {
         margin-bottom: 15px;
       }
-      input {
+      > div {
+        display: flex;
         width: 325px;
         height: 38px;
         background: #fefefe;
         border-radius: 19px;
+        box-sizing: border-box;
+        justify-content: space-between;
+      }
+
+      input {
         border: none;
         outline: none;
         border-radius: 19px;
-        margin-bottom: 20px;
         padding-left: 20px;
-        box-sizing: border-box;
+      }
+
+      button {
+        border: none;
+        background: #fefefe;
+        border-radius: 19px;
+        padding-left: 10px;
+        width: 46px;
+        cursor: pointer;
+        outline: none;
       }
     }
 
